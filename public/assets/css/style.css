@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+ol,
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+ul li{
+	color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+i,
+span,
+input{
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,h6{
+  color: #000;
+}
+body{
+   background-color: #fff;
+   font-family: 'DM Sans', sans-serif;
+}
+a,
+a:hover{
+    color: #000;
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+.nav_section{
+    padding: 0px 0px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.nav_section .navbar-brand img{
+    width: 78px;
+}
+.nav_section .navbar-nav .nav-item .nav-link{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-left: 15px;
+    transition: all linear .2s;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+.nav_section .navbar-nav .nav-item .nav-link.active,
+.nav_section .navbar-nav .nav-item .nav-link:hover{
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* hero css start */
+.hero_ol{
+    background-color: rgba(0, 0, 0, 0.632);
+    min-height: 450px;
+}
+.hero_txt{
+    text-align: center;
+    margin-top: 120px;
+   
+}
+.hero_txt h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: #28a745;
+    line-height: 70px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.hero_txt h6{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+.hero_txt p{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+.hero_txt h1::before {
+	position: absolute;
+	content: "শতবর্ষে";
+	left: -44px;
+	top: -35px;
+	width: 100px;
+	height: 100%;
+	transform: rotate(-42deg);
+	font-size: 36px;
+	line-height: 36px;
+	color: red;
+}
+.hero_txt h1::after {
+	position: absolute;
+	content: "১৯২১ - ২০২১";
+	left: 13px;
+	top: -27px;
+	width: 205px;
+	height: 100%;
+	font-size: 24px;
+	line-height: 26px;
+	color: #fff;
+}
+/* hero css end */
+
+/* common css start */
+.common_head_wrap{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.common_head_wrap h2{
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #28a745;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+}
+.common_head_wrap p{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #0d0d0dbe;
+}
+/* common css end */
+
+/* counter_section css start */
+.counter_txt{
+    text-align: center;
+    margin-top: 30px;
+}
+.counter_txt h3{
+    font-size: 45px;
+    line-height: 52px;
+    font-weight: 700;
+    color: goldenrod;
+}
+.counter_txt h3 span{
+    color: red;
+}
+.counter_txt p{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #fff;
+}
+.count_down_wrap{
+    display: flex;
+    justify-content: center;
+}
+.counter_txt{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* counter_section cs end */
+.ftr_copy p a,
+.ftr_copy p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px; 
+}
+.ftr_btm_sec{
+    background-color: #28a745;
+    padding: 15px 0px;
+}
+/* footer css end */
+
+/* team css start */
+.team_section{
+    padding: 80px 0px;
+}
+.teammembar_head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.teammembar_head h2{
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #0d0d0d;
+}
+.membar_item_wrap{
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+.membar_item_wrap .media {
+    align-items: center;
+}
+.membar_item_wrap .media img{
+    width: 100px;
+    margin-right: 15px;
+}
+.membar_item_wrap .media h5{
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #28a745;
+    margin-bottom: 5px;
+}
+.membar_item_wrap .media h6{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #0d0d0d;
+}
+.membar_item_wrap .media p{
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #0d0d0d;
+}
+.membar_ftr_txt{
+    margin-top: 8px;
+}
+.membar_ftr_txt p{
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #0d0d0d;
+}
+.membar_ftr_txt h6{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-top: 2px;
+}
+.membar_ftr_txt a{
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #28a745;
+    text-decoration: underline;
+}
+.registration_frm{
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 9px;
+}
+.registration_section{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.autocomplete {
+    position: relative;
+}  
+.autocomplete-items {
+	position: absolute;
+	z-index: 99;
+	width: 100%;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 153px;
+	overflow-y: scroll;
+	padding-left: 21px;
+	padding-top: 12px;
+	background: #fff;
+    border: 1px solid #ced4da;
+}
+.autocomplete-items > div {
+	margin-bottom: 3px;
+	padding: 4px 12px;
+	display: inline-block;
+	margin-right: 8px;
+	border-radius: 4px;
+    cursor: pointer;
+    transition: all linear .2s;
+}
+.autocomplete-items > div:hover{
+    background-color: #28a745;
+}
+.registration_frm .form-group a {
+    background-color: #3b5998;
+    display: block;
+    text-align: center;
+    padding: 10px 50px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all linear .2s;
+    border: 2px solid #3b5998;
+}
+.registration_frm .form-group a:hover{
+    background-color: transparent;
+    color: #3b5998;
+}
+.registration_frm .form-group a i{
+    margin-right: 8px;
+}
+.registration_frm .form-group label{
+    font-size: 16px;
+    font-weight: 500;
+}
+.registration_frm .form-group .form-control{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    font-weight: 500;
+    height: 50px;
+}
+.registration_frm .form-group .form-control:focus-within{
+    box-shadow: none;
+}
+.registration_frm .form-group .btn_submit{
+    background-color: #28a745;
+    display: block;
+    text-align: center;
+    padding: 10px 50px;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all linear .2s;
+    border: 2px solid #28a745;
+    margin-top: 35px;
+}
+.registration_frm .form-group .btn_submit:hover{
+    background-color: transparent;
+    color: #28a745;
+}
+
+/* home css start */
+.home_slider_wrap{
+    position: relative;
+}
+.hero_ol {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.home_hero_3{
+    background-image: url(../images/side_building.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+}
+.home_hero_2{
+    background-image: url(../images/home_hero.png);
+    background-size: cover;
+    background-position: bottom center;
+    height: 550px;
+}
+.home_hero_1{
+    background-image: url(../images/home_heros.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+}
+.home_section{
+    padding: 60px 0px;
+}
+.membar_ftr_txt h6 i{
+    margin-right: 5px;
+}
+
+.home_header_txt p{
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-top: 30px;
+}
+.home_header_txt ul li{
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-top: 10px;
+}
+.home_header_txt h6{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #0d0d0d;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.home_header_txt ul li strong,
+.home_header_txt p span{
+    color: #28a745;
+    font-weight: 600;
+}
+.home_header_txt ul li span{
+    color: #28a745;
+    font-weight: 600;
+}
+.main_title h2{
+    font-size:32px;
+    line-height: 37px;
+    font-weight: 600;
+    color: #0d0d0d;
+    text-align: center;
+}
+.home_regis_btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.home_regis_btn a{
+    display: inline-block;
+    background-color: #28a745;
+    border: 2px solid #28a745;
+    padding: 12px 60px;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all linear .2s;
+}
+.home_regis_btn a:hover{
+    background-color: transparent;
+    color: #28a745;
+}
+/* home css end */
