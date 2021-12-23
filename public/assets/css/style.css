@@ -485,3 +485,7 @@ img{
   animation: confetti-fast 1.25s linear 1 forwards;
 }
 
+
+.team_section .pagination{
+    justify-content: center;
+}
