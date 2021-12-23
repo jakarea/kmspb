@@ -1,16 +1,114 @@
 /* Extra small devices (portrait phones, less than 576px) */ 
 @media(min-width: 320px) and (max-width: 575px) {    
-    
+    .nav_section .navbar-brand img{
+        width: 50px;
+        margin-left: 10px;
+    }
+    .navbar-light .navbar-toggler {
+        color: #fff;
+        border-color: transparent;
+        background-color: #28a745;
+        margin-right: 10px;
+    }
+    .navbar-light .navbar-toggler .navbar-toggler-icon{
+        color: #fff!important;
+    }
+    .nav_section .navbar-nav .nav-item .nav-link{
+        text-align: center;
+        padding: 12px 0px;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    .hero_txt h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .hero_txt h1::before {
+        left: 34px;
+        top: -22px;
+        font-size: 26px;
+    }
+    .hero_txt h1::after {
+        left: 54px;
+        font-size: 20px;
+    }
+    .hero_txt h6 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .counter_txt h3 {
+        font-size: 30px;
+        line-height: 52px;
+        font-weight: 700;
+        color: goldenrod;
+        text-align: center;
+    }
+    .counter_txt h3  span{
+        display: block;
+    }
+    .home_header_txt p{
+        text-align: justify;
+    }
+    .teammembar_head h2,
+    .common_head_wrap h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .registration_frm .form-group a{
+        width: 100%;
+    }
+    .registration_frm{
+        padding: 20px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
-      
+    .nav_section .navbar-brand img{
+        width: 50px;
+        margin-left: 10px;
+    }
+    .navbar-light .navbar-toggler {
+        color: #fff;
+        border-color: transparent;
+        background-color: #28a745;
+        margin-right: 10px;
+    }
+    .navbar-light .navbar-toggler .navbar-toggler-icon{
+        color: #fff!important;
+    }
+    .nav_section .navbar-nav .nav-item .nav-link{
+        text-align: center;
+        padding: 12px 0px;
+        margin-top: 5px;
+        margin-left: 0;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */ 
 @media (min-width: 768px) and (max-width: 991px) {
-    
+    .nav_section .navbar-brand img{
+        width: 50px;
+        margin-left: 10px;
+    }
+    .navbar-light .navbar-toggler {
+        color: #fff;
+        border-color: transparent;
+        background-color: #28a745;
+        margin-right: 10px;
+    }
+    .navbar-light .navbar-toggler .navbar-toggler-icon{
+        color: #fff!important;
+    }
+ 
+    .hero_txt h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .hero_txt h1::before {
+        left: -26px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */

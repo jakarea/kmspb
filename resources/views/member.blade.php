@@ -60,6 +60,11 @@
                </div>
             </div>
            <!-- single membar item end -->
+           <div class="col-12 text-center home_regis_btn">
+            <a href="{{ url('/registation')}}"> রেজিস্ট্রেশন করুন</a>
+
+            <p class="text-danger mt-5">* একক বা দলগত ভাবে সাংস্কৃতিক অনুষ্ঠানে অংশগ্রহনের জন্য আব্দুল কুদ্দুস স্যার এর সাথে যোগাযোগ করুন ।  </p>
+        </div>
         </div>
      </div>
   </section>

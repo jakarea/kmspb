@@ -69,6 +69,11 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+         <div class="col-12">
+            <p class="text-danger mt-5 text-center">* একক বা দলগত ভাবে সাংস্কৃতিক অনুষ্ঠানে অংশগ্রহনের জন্য আব্দুল কুদ্দুস স্যার এর সাথে যোগাযোগ করুন । </p>
+           </div>
+        </div>
     </div>
 </section>
 <!-- registration section end -->
