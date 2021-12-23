@@ -13,8 +13,7 @@
       </div>
       <div class="row mt-3">
 
-         @if(count($members) !=0)
-
+      
          @foreach($members as $member)
          <!-- single membar item start -->
          <div class="col-lg-4">
@@ -35,24 +34,34 @@
 
          @endforeach
 
-         @else
+          
+        </div>
+        <div class="row">
+           <div class="col-12 text-center mb-3">
+                {{ $members->links("pagination::bootstrap-4") }}
+           </div>
+        </div>
+        <div class="row">
+        <div class="col-12 text-center home_regis_btn">
+            <a href="{{ url('/registation')}}"> রেজিস্ট্রেশন করুন</a>
 
-         <!-- single membar item start -->
-         <div class="col-lg-4">
-            <div class="membar_item_wrap">
-               <div class="media">
-                    <h2>No meber register yet!</h2>
-               </div>
-            </div>
+            <p class="text-danger mt-5">* একক বা দলগত ভাবে সাংস্কৃতিক অনুষ্ঠানে অংশগ্রহনের জন্য আব্দুল কুদ্দুস স্যার এর সাথে যোগাযোগ করুন ।  </p>
+        </div>
+        </div>
+        
+     </div>
+  </section>
+  <!-- team section end -->
          </div>
          <!-- single membar item end -->
 
-         @endif
 
-         {{ $members->links("pagination::bootstrap-4") }}
+         
 
       </div>
    </div>
+
+   
 </section>
 <!-- team section end -->
 
