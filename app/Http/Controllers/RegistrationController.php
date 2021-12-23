@@ -55,6 +55,7 @@ class RegistrationController extends Controller
         $member->bkash_number = $request->bkash_number;
         $member->trnx_id = $request->trnx_id;
         $member->amount = $request->amount;
+        $member->status = 'Pending';
         $member->image = $imagename;
 
         $member->save();

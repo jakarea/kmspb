@@ -22,6 +22,7 @@ class CreateMembersTable extends Migration
             $table->string('trnx_id');
             $table->string('facebook_id')->nullable();
             $table->string('amount');
+            $table->string('status');
             $table->string('image')->nullable();
             $table->timestamps();
         });

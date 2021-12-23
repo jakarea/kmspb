@@ -2,7 +2,8 @@
 
 
 @section('content')
-
+<div class="js-container">
+   </div>
 <!-- registration section start -->
 <section class="registration_section">
     <div class="container">
@@ -31,7 +32,7 @@
                         @csrf
                         <div class="form-group">
                             <!-- <a href="#"><i class="fa fa-facebook-square"></i> Registration With Facebook</a> -->
-                          <p class="text-center text-danger mt-3" style="font-weight: 600;">রেজিস্ট্রেশন করা যাবে ২৭ ডিসেমবার পর্যন্ত ।</p>
+                          <p class="text-center text-danger mt-3" style="font-weight: 600;">রেজিস্ট্রেশন চলবে ২৭ ডিসেমবার পর্যন্ত ।</p>
                         </div>
                         <div class="form-group">
                             <label for="">আপনার নাম <sup class="text-danger">*</sup></label>
@@ -60,8 +61,8 @@
                               <div class="col-lg-6">
                                 <div class="form-group mb-0">
                                   <label for="" class="text-danger">যত টাকা পাঠিয়েছেন  <sup class="text-danger">*</sup></label>
-                                  <input type="text" class="form-control" name="trnx_id" placeholder="Amount">
-                                  <label class="text-danger">{{ $errors->first('trnx_id') }}</label>
+                                  <input type="text" class="form-control" name="amount" placeholder="Amount">
+                                  <label class="text-danger">{{ $errors->first('amount') }}</label>
                               </div>
                               </div>
                               <div class="col-lg-6">
@@ -148,6 +149,57 @@
   </script>
 
 <script>
+    
+const Confettiful = function(el) {
+  this.el = el;
+  this.containerEl = null;
+  
+  this.confettiFrequency = 3;
+  this.confettiColors = ['#EF2964', '#00C09D', '#2D87B0', '#48485E','#EFFF1D'];
+  this.confettiAnimations = ['slow', 'medium', 'fast'];
+  
+  this._setupElements();
+  this._renderConfetti();
+};
+
+Confettiful.prototype._setupElements = function() {
+  const containerEl = document.createElement('div');
+  const elPosition = this.el.style.position;
+  
+  
+  
+  containerEl.classList.add('confetti-container');
+  
+  this.el.appendChild(containerEl);
+  
+  this.containerEl = containerEl;
+};
+
+Confettiful.prototype._renderConfetti = function() {
+  this.confettiInterval = setInterval(() => {
+    const confettiEl = document.createElement('div');
+    const confettiSize = (Math.floor(Math.random() * 3) + 7) + 'px';
+    const confettiBackground = this.confettiColors[Math.floor(Math.random() * this.confettiColors.length)];
+    const confettiLeft = (Math.floor(Math.random() * this.el.offsetWidth)) + 'px';
+    const confettiAnimation = this.confettiAnimations[Math.floor(Math.random() * this.confettiAnimations.length)];
+    
+    confettiEl.classList.add('confetti', 'confetti--animation-' + confettiAnimation);
+    confettiEl.style.left = confettiLeft;
+    confettiEl.style.width = confettiSize;
+    confettiEl.style.height = confettiSize;
+    confettiEl.style.backgroundColor = confettiBackground;
+    
+    confettiEl.removeTimeout = setTimeout(function() {
+      confettiEl.parentNode.removeChild(confettiEl);
+    }, 1500);
+    
+    this.containerEl.appendChild(confettiEl);
+  }, 15);
+};
+
+window.confettiful = new Confettiful(document.querySelector('.js-container'));
+
+
    function autocomplete(inp, arr) {
      /*the autocomplete function takes two arguments,
      the text field element and an array of possible autocompleted values:*/
