@@ -25,7 +25,7 @@
                      <h5>নাম: {{ $member->name }} </h5>
                      <h6>ব্যাচ: {{ $member->batch }} </h6>
                      <div class="membar_ftr_txt">
-                        <h6><i class="fa fa-phone"></i>+৮৮ {{ $member->phone }} </h6>
+                        <h6><i class="fa fa-phone"></i> {{ $member->phone }} </h6>
                      </div>
                   </div>
                </div>

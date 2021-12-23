@@ -63,7 +63,7 @@ class RegistrationController extends Controller
     public function members()
     {
 
-        $members = Member::orderBy('id', 'DESC')->paginate(3);
+       $members = Member::orderBy('id', 'DESC')->paginate(24);
         return view('member', compact('members'));
     }
 }
