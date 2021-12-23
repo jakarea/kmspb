@@ -24,6 +24,7 @@ class RegistrationController extends Controller
             'batch' => 'required',
             'phone' => 'required',
             'bkash_number' => 'required',
+            'amount' => 'required',
             'trnx_id' => 'required',
             'image'=>'mimes:jpg,jpeg,png'
         ]);
@@ -37,14 +38,14 @@ class RegistrationController extends Controller
             if (isset($image)) {
                 $currentDate = Carbon::now()->toDateString();
                 $imagename = $slug . '-' . $currentDate . '-' . uniqid() . '.' . $image->getClientOriginalExtension();
-                if (!file_exists('uploads/members')) {
-                    mkdir('uploads/members', 0777, true);
+                if (!file_exists('public/assets/uploads/members')) {
+                    mkdir('public/assets/uploads/members', 0777, true);
                 }
-                $image->move('uploads/members', $imagename);
+                $image->move('public/assets/uploads/members', $imagename);
             }
         }else{
 
-            $imagename = NULL;
+            $imagename = "avatar_1.png";
         }
 
         $member = new Member();
@@ -53,11 +54,12 @@ class RegistrationController extends Controller
         $member->phone = $request->phone;
         $member->bkash_number = $request->bkash_number;
         $member->trnx_id = $request->trnx_id;
+        $member->amount = $request->amount;
         $member->image = $imagename;
 
         $member->save();
 
-        return redirect()->back();
+        return redirect("members")->with("success","রেজিস্ট্রেশন সম্পূর্ণ হয়েছে, ১ ঘন্টার ভিতর আপনার তথ্য ভেরিফাই করে, এপ্রুভ করা হবে!");
     }
 
     public function members()

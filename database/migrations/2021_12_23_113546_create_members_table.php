@@ -21,6 +21,7 @@ class CreateMembersTable extends Migration
             $table->string('bkash_number');
             $table->string('trnx_id');
             $table->string('facebook_id')->nullable();
+            $table->string('amount');
             $table->string('image')->nullable();
             $table->timestamps();
         });
