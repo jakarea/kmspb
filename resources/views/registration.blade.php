@@ -30,33 +30,51 @@
                     <form action="" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
-                            <a href="#"><i class="fa fa-facebook-square"></i> Registration With Facebook</a>
+                            <!-- <a href="#"><i class="fa fa-facebook-square"></i> Registration With Facebook</a> -->
+                          <p class="text-center text-danger mt-3" style="font-weight: 600;">রেজিস্ট্রেশন করা যাবে ২৭ ডিসেমবার পর্যন্ত ।</p>
                         </div>
                         <div class="form-group">
-                            <label for="">নাম <sup class="text-danger">*</sup></label>
+                            <label for="">আপনার নাম <sup class="text-danger">*</sup></label>
                             <input type="text" class="form-control" name="name" placeholder="Enter Your Name">
                             <label class="text-danger">{{ $errors->first('name') }}</label>
                         </div>
                         <div class="form-group autocomplete">
-                            <label for="">ব্যাচ <sup class="text-danger">*</sup></label>
+                            <label for="">আপনার ব্যাচ <sup class="text-danger">*</sup></label>
                             <input type="text" id="batch" class="form-control" name="batch" placeholder="Example: 2003">
                             <label class="text-danger">{{ $errors->first('batch') }}</label>
                         </div>
-                        <div class="form-group">
-                            <label for="">ফোন নাম্বার <sup class="text-danger">*</sup></label>
+                        <div class="form-group mb-0">
+                            <label for="">আপনার ফোন নাম্বার <sup class="text-danger">*</sup></label>
                             <input type="number" class="form-control" name="phone" placeholder="Enter Your Phone Number">
                             <label class="text-danger">{{ $errors->first('phone') }}</label>
                         </div>
-                        <div class="form-group">
-                            <label for="">ফোন নাম্বার sender <sup class="text-danger">*</sup></label>
-                            <input type="number" class="form-control" name="bkash_number" placeholder="Enter Your Phone Number">
-                            <label class="text-danger">{{ $errors->first('bkash_number') }}</label>
+                        <div class="row">
+                          <div class="col-lg-12" style="border: 1px solid #28a745; padding-top:15px; margin-bottom: 15px; border-radius: 7px; background: #fff">
+                              <div class="form-group">
+                                <label for="" class="text-danger">যে নাম্বার থেকে টাকা পাঠিয়েছেন  <sup class="text-danger">*</sup></label>
+                                <input type="number" class="form-control" name="bkash_number" placeholder="Enter bKash Number">
+                                <label class="text-danger">{{ $errors->first('bkash_number') }}</label>
+                            </div>
+
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div class="form-group mb-0">
+                                  <label for="" class="text-danger">যত টাকা পাঠিয়েছেন  <sup class="text-danger">*</sup></label>
+                                  <input type="text" class="form-control" name="trnx_id" placeholder="Amount">
+                                  <label class="text-danger">{{ $errors->first('trnx_id') }}</label>
+                              </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div class="form-group mb-0">
+                                  <label for="" class="text-danger">বিকাশ <sup class="text-danger">*</sup></label>
+                                  <input type="text" class="form-control" name="trnx_id" placeholder="Transaction ID">
+                                  <label class="text-danger">{{ $errors->first('trnx_id') }}</label>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="form-group">
-                            <label for="">বিকাশ/ নগদ/ রকেট <sup class="text-danger">*</sup></label>
-                            <input type="text" class="form-control" name="trnx_id" placeholder="Transaction ID">
-                            <label class="text-danger">{{ $errors->first('trnx_id') }}</label>
-                        </div>
+                        
 
                         <div class="form-group">
                             <label for="">আপনার ছবি </label>

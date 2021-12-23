@@ -210,6 +210,7 @@ img{
 .membar_item_wrap .media img{
     width: 100px;
     margin-right: 15px;
+    border-radius: 50%;
 }
 .membar_item_wrap .media h5{
     font-size: 17px;

@@ -8,7 +8,7 @@
      <div class="container">
         <div class="row">
            <div class="col-12 main_title">
-              <h2>বিস্তারিত </h2>
+              <h2>প্রস্তুতি </h2>
            </div>
            <div class="col-lg-12">
               <div class="home_header_txt">
